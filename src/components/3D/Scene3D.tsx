@@ -4,8 +4,14 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import FloatingOrb from './FloatingOrb';
 
 const Scene3D = () => {
+  console.log('Scene3D component rendering');
+  
   return (
-    <Canvas className="absolute inset-0 -z-10">
+    <Canvas 
+      className="absolute inset-0 -z-10"
+      onCreated={() => console.log('Canvas created successfully')}
+      onError={(error) => console.error('Canvas error:', error)}
+    >
       <PerspectiveCamera makeDefault position={[0, 0, 10]} />
       <OrbitControls
         enableZoom={false}

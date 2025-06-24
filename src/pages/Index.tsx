@@ -9,15 +9,18 @@ import Dashboard from '@/components/Dashboard/Dashboard';
 type AppState = 'welcome' | 'auth' | 'onboarding' | 'dashboard';
 
 const Index = () => {
+  console.log('Index component rendering');
   const [appState, setAppState] = useState<AppState>('welcome');
   const [userData, setUserData] = useState(null);
 
   const handleLogin = () => {
+    console.log('Login initiated');
     // Simulate Google login
     setAppState('onboarding');
   };
 
   const handleOnboardingComplete = (data: any) => {
+    console.log('Onboarding completed with data:', data);
     setUserData(data);
     setAppState('dashboard');
   };

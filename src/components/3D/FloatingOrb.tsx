@@ -11,6 +11,7 @@ interface FloatingOrbProps {
 }
 
 const FloatingOrb = ({ position, color, size = 0.5 }: FloatingOrbProps) => {
+  console.log('FloatingOrb rendering with color:', color);
   const meshRef = useRef<THREE.Mesh>(null);
 
   useFrame((state) => {
