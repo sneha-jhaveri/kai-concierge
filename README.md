@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# GitDocify
 
-## Project info
+## Kai Concierge
 
-**URL**: https://lovable.dev/projects/ef47c308-3c68-4e8b-b311-1bc9ab377ff7
+### Overview
 
-## How can I edit this code?
+Kai Concierge is a versatile developer tool designed to streamline the creation of modern, interactive web applications. Built with React, TypeScript, and Vite, it offers a rich set of UI components, 3D visualizations, and utility hooks to enhance user engagement and developer productivity.
 
-There are several ways of editing your application.
+### Why Kai Concierge?
 
-**Use Lovable**
+This project aims to simplify building scalable, visually compelling web experiences. The core features include:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef47c308-3c68-4e8b-b311-1bc9ab377ff7) and start prompting.
+- 🌟 **UI Component Library**: Reusable, accessible components for buttons, modals, navigation, and more.
+- 🚀 **Modern Build Setup**: Configured with Vite, TypeScript, and Tailwind CSS for fast, efficient development.
+- 🌐 **3D Visuals**: Interactive floating orbs and scene rendering for immersive interfaces.
+- 🛠️ **Responsive & Utility Hooks**: Tools for device detection, toast notifications, and dynamic styling.
+- 🏗️ **Modular Architecture**: Promotes maintainability and scalability across projects.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Getting Started
 
-**Use your preferred IDE**
+#### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This project requires the following dependencies:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Programming Language**: TypeScript
+- **Package Manager**: Npm
 
-Follow these steps:
+#### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Build Kai Concierge from the source and install dependencies:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sneha-jhaveri/kai-concierge
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. ""Navigate to the project directory:**
+   cd kai-concierge
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+3. **Install the dependencies: Using npm:**
+    npm install 
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ef47c308-3c68-4e8b-b311-1bc9ab377ff7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+4.Usage
+    Run the project with:
+    Using npm:  npm run dev
