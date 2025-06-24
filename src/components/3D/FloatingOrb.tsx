@@ -1,7 +1,6 @@
 
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Sphere } from '@react-three/drei';
 import * as THREE from 'three';
 
 interface FloatingOrbProps {
@@ -23,7 +22,8 @@ const FloatingOrb = ({ position, color, size = 0.5 }: FloatingOrbProps) => {
   });
 
   return (
-    <Sphere ref={meshRef} position={position} args={[size, 32, 32]}>
+    <mesh ref={meshRef} position={position}>
+      <sphereGeometry args={[size, 32, 32]} />
       <meshStandardMaterial
         color={color}
         emissive={color}
@@ -31,7 +31,7 @@ const FloatingOrb = ({ position, color, size = 0.5 }: FloatingOrbProps) => {
         transparent
         opacity={0.8}
       />
-    </Sphere>
+    </mesh>
   );
 };
 
