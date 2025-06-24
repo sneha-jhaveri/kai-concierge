@@ -3,14 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium KAI Design System */
+/* Advanced KAI Design System */
 
 @layer base {
   :root {
-    --background: 15 15 20;
+    --background: 8 8 11;
     --foreground: 255 255 255;
 
-    --card: 8 8 11;
+    --card: 15 15 20;
     --card-foreground: 255 255 255;
 
     --popover: 8 8 11;
@@ -44,66 +44,130 @@
 
   body {
     @apply bg-luxury-darker text-foreground font-inter antialiased;
-    background: radial-gradient(ellipse at center, #0F0F14 0%, #08080B 100%);
+    background: 
+      radial-gradient(ellipse at top left, rgba(107, 70, 193, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at center, #0F0F14 0%, #08080B 100%);
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
   }
 
-  /* Glass morphism utilities */
+  /* Advanced Glass Morphism */
   .glass {
     @apply bg-white/5 backdrop-blur-md border border-white/10;
+    box-shadow: 
+      0 8px 32px 0 rgba(31, 38, 135, 0.37),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
   }
   
   .glass-strong {
     @apply bg-white/10 backdrop-blur-lg border border-white/20;
+    box-shadow: 
+      0 8px 32px 0 rgba(31, 38, 135, 0.37),
+      0 4px 16px 0 rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
   }
 
-  /* Luxury gradients */
+  /* Enhanced Luxury Gradients */
   .gradient-gold {
-    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #F4D03F 100%);
+    box-shadow: 0 4px 15px 0 rgba(212, 175, 55, 0.4);
   }
   
   .gradient-purple {
-    background: linear-gradient(135deg, #6B46C1 0%, #9333EA 100%);
+    background: linear-gradient(135deg, #6B46C1 0%, #9333EA 50%, #A855F7 100%);
+    box-shadow: 0 4px 15px 0 rgba(107, 70, 193, 0.4);
   }
   
   .gradient-rose {
-    background: linear-gradient(135deg, #E8B4B8 0%, #F472B6 100%);
+    background: linear-gradient(135deg, #E8B4B8 0%, #F472B6 50%, #EC4899 100%);
+    box-shadow: 0 4px 15px 0 rgba(232, 180, 184, 0.4);
   }
 
-  /* Text gradients */
+  /* Advanced Text Gradients */
   .text-gradient-gold {
-    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #F4D03F 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
   }
   
   .text-gradient-purple {
-    background: linear-gradient(135deg, #6B46C1 0%, #9333EA 100%);
+    background: linear-gradient(135deg, #6B46C1 0%, #9333EA 50%, #A855F7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(107, 70, 193, 0.3));
+  }
+
+  /* Futuristic Animations */
+  @keyframes float-advanced {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(-5px) rotate(-1deg); }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.4);
+    }
+  }
+
+  @keyframes data-stream {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+  }
+
+  .animate-float-advanced {
+    animation: float-advanced 6s ease-in-out infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-data-stream {
+    animation: data-stream 8s linear infinite;
   }
 }
 
-/* Custom scrollbar */
+/* Enhanced Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(15, 15, 20, 0.8);
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.5);
-  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.6), rgba(107, 70, 193, 0.4));
+  border-radius: 6px;
+  border: 2px solid rgba(15, 15, 20, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 175, 55, 0.8);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.8), rgba(107, 70, 193, 0.6));
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: white;
 }
