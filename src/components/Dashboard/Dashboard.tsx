@@ -1,5 +1,5 @@
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import DashboardHeader from './DashboardHeader';
 import QuickActions from './QuickActions';
